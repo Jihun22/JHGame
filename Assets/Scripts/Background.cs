@@ -8,7 +8,7 @@ public class Background : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     transform.position += vector3.down * moveSpeed
+     transform.position += Vector3.down * moveSpeed *Time.deltaTime;
 
     }
 }
