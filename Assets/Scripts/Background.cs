@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class Background : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    private float moveSpeed =3f;
     // Update is called once per frame
     void Update()
     {
-        
+     transform.position += vector3.down * moveSpeed
+
     }
 }
