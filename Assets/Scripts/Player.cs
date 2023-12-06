@@ -27,7 +27,8 @@ public class Player : MonoBehaviour
    //마우스 제어 
     // 마우스 로그 Debug.Log(Input.mousePosition);
     Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-    transform.position = new Vector3(mousePos.x, transform.position.y, transform.position.z);
-    
+    float toX = Mathf.Clamp(mousePos.x,-2.35f,2.35f);
+    transform.position = new Vector3(toX, transform.position.y, transform.position.z);
+
     }
 }
