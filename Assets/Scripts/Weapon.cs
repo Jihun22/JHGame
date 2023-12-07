@@ -19,3 +19,4 @@ public class Weapon : MonoBehaviour
     {
         transform.position += Vector3.up * moveSpeed * Time.deltaTime;
 }
+}
